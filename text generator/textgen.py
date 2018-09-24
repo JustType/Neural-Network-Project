@@ -189,9 +189,9 @@ def randomChoice():
     return ascii[random.randint(0, len(ascii) - 1)]
 
 
+PATH_TO_FILE = '' # Choose file for network to learn
 
-
-text = open('dobsinsky.txt', 'r').read()
+text = open(PATH_TO_FILE, 'r').read()
 
 END_TOKEN = 127
 
