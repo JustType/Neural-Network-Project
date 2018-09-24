@@ -1,3 +1,4 @@
+## Place your hand into frame and press 'Q'
 import cv2
 import cnn
 from time import sleep
