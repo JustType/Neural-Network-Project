@@ -13,6 +13,7 @@ print frame.shape
 
 #cv2.imwrite('cap.jpg', frame)
 
+dir = 0 # change this after each num you're showing on your hand (should correspond to dir num)
 
 #quit()
 counter = 0
@@ -28,7 +29,7 @@ while(True):
     cv2.imshow('Partial Frame', neural_frame)
     #cv2.imshow('frame', rgb)
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        out = cv2.imwrite('gallery/5/capture' + str(counter) + '.jpg', neural_frame)
+        out = cv2.imwrite('gallery/' + str(dir) + '/capture' + str(counter) + '.jpg', neural_frame)
         counter += 1
         #break
 
